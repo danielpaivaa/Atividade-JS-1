@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-a {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.buttons {
+    margin-bottom: 10px;
+}
+
+.botao {
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    border:1px solid black;
+}
+
+#botao1 {
+    background-color: rgb(87, 224, 87);
+}
+
+#botao2 {
+    background-color: rgb(87, 146, 224);
+}
+
+#botao3 {
+    background-color: #FF0;
+}
+
+#tela {
+    border: 1px solid black;
+    padding: 80px 113px;
+}
+
+.container-b {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.bt-calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+    gap: 4px;
+}
+.calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px; 
+}
+
+.bt {
+    padding: 15px;
+}
+
+.bt:nth-child(14) {
+    background-color: lightgreen;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+.bt:nth-child(14):hover {
+    background-color: rgb(132, 219, 132);
+}
+
+.bt:nth-child(15) {
+    background-color: rgb(252, 63, 63);
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+.bt:nth-child(15):hover {
+    background-color: rgb(230, 56, 56);
+}
+
+#boxText {
+    padding: 8px 6px;
+}
+
+@media(max-width: 560px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+}
